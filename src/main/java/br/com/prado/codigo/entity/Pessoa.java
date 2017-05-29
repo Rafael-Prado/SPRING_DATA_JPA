@@ -1,4 +1,4 @@
-package br.com.prado.codigo.model;
+package br.com.prado.codigo.entity;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -18,6 +18,8 @@ import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
+
+
 
 @Entity
 @Table(name = "pessoas",

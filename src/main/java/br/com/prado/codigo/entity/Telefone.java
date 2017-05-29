@@ -1,4 +1,4 @@
-package br.com.prado.codigo.model;
+package br.com.prado.codigo.entity;
 
 import java.io.Serializable;
 
@@ -15,12 +15,14 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 
-@Entity
-@Table(name= "telefones")
-public class Telefone implements Serializable{
 
-	private static final long serialVersionUID = 1L;
+@Entity
+@Table(name = "telefones")
+public class Telefone implements Serializable {
+
 	
+	private static final long serialVersionUID = 1L;
+
 	public enum TipoTelefone{
 		RESIDENCIAL, CELULAR, COMERCIAL
 	}
@@ -108,5 +110,4 @@ public class Telefone implements Serializable{
 	}
 
 	
-
 }

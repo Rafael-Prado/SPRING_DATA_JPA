@@ -1,4 +1,4 @@
-package br.com.prado.codigo.model;
+package br.com.prado.codigo.entity;
 
 import java.io.Serializable;
 import java.util.List;
@@ -16,15 +16,18 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
+
+
 @Entity
-@Table(name= "endereco")
-public class Endereco implements Serializable{
+@Table(name = "enderecos")
+public class Endereco implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-	
-	public enum TipoEndereco{
+
+	public enum TipoEndereco {
 		COMERCIAL, RESIDENCIAL
 	}
+	
 	@Id
 	@GeneratedValue(strategy= GenerationType.IDENTITY)
 	@Column(name= "endereco_id")
@@ -121,7 +124,4 @@ public class Endereco implements Serializable{
 	}
 
 	
-	
-	
-
 }
